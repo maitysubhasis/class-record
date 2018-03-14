@@ -1,6 +1,7 @@
-'use strict';
+/* eslint-disable */
+"use strict";
 
-module.exports = function Record (allowed) {
+export default function Record (allowed) {
   const { defaults = {} } =  allowed;
   return (Parent = Object) => {
     return class _Record extends Parent {
