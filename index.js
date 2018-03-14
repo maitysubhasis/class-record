@@ -2,7 +2,7 @@
 
 module.exports = function Record (allowed) {
   const { defaults = {} } =  allowed;
-  return (Parent = null) => {
+  return (Parent = Object) => {
     return class _Record extends Parent {
       constructor (object) {
         super(object);
