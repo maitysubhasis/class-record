@@ -16,7 +16,7 @@ export default function Record (allowed) {
         }
         // filter using allowed
         Object.keys(object).forEach((key) => {
-          key in object
+          key in allowed
           ? Object.assign(this, { [key]: object[key] })
           : '';
         })
